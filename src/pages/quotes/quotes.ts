@@ -10,10 +10,10 @@ import { Quote } from '../../data/quote.interface';
 })
 export class QuotesPage implements OnInit {
   constructor (private navParams: NavParams) {}
-    quoteGroup: {category: string, quotes: Quote[], icon: string}[];
+  quoteGroup: {category: string, quotes: Quote[], icon: string}[];
 
-    ngOnInit() {
-      this.quoteGroup = this.navParams.data;
-    }
+  ngOnInit() {
+    this.quoteGroup = this.navParams.data;
+  }
 
 }
